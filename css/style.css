@@ -225,6 +225,7 @@ td { vertical-align: top; }
   float: left;
   width: 260px;
   position: fixed;
+  left: 50px;
 }
 
 ul#nav {
