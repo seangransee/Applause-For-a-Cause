@@ -42,8 +42,8 @@ body, button, input, select, textarea { font-family: 'Montserrat', sans-serif; c
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+/*::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }*/
 
 
 /* =============================================================================
@@ -268,8 +268,8 @@ h2 {
   font-size: 24px;
 }
 
-.person{
-  font-family: 'Open Sans', sans-serif;
+p {
+  font-family: 'Cabin', sans-serif;
 }
 
 h3 {
@@ -284,6 +284,18 @@ h3 {
   font-size:30px;
   padding-bottom: 20px;
   margin-top: -20px;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.person {
+  padding-bottom: 10px;
+}
+
+.gray {
+  color: #CCC;
 }
 
 
