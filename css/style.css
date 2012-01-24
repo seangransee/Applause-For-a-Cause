@@ -50,8 +50,8 @@ body, button, input, select, textarea { font-family: 'Montserrat', sans-serif; c
    Links
    ========================================================================== */
 
-a { color: #f4a363; }
-a:visited { color: #f4a363; }
+a { color: #fe9d50; }
+a:visited { color: #fe9d50; }
 a:hover { color: #38B9E6; }
 a:focus { outline: thin dotted; }
 
@@ -243,7 +243,7 @@ ul#nav {
 }
 
 li.current a {
-  color: #a765fd;
+  color: #965599;
 }
 
 section {
@@ -276,6 +276,13 @@ h3 {
   font-size: 20px;
 }
 
+.purple {
+  color: #965599;
+}
+
+#cntdwn {
+  font-size:30px;
+}
 
 
 /* ==|== non-semantic helper classes ========================================
