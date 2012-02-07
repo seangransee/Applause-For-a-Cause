@@ -208,7 +208,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Sean Gransee
    ========================================================================== */
 
 .mainlogo {
@@ -276,6 +276,7 @@ p {
 #castcrew h3 {
   font-size: 20px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .purple {
@@ -293,9 +294,8 @@ p {
 }
 
 .person {
-  padding-bottom: 10px;
+  padding-top: 20px;
   clear: both;
-  margin-bottom: 20px;
 }
 
 .gray {
@@ -306,11 +306,21 @@ p {
 	float: left;
 	padding-right: 20px;
 	width: 125px;
+	margin-bottom: 25px;
 }
 
 #castcrew h4 {
 	color: #999;
 	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+}
+
+#castcrew p {
+	width: 553px;
+	float: right;
+	margin-top: 0;
+	padding-top: 10px;
 }
 
 
