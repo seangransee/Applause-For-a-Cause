@@ -273,8 +273,9 @@ p {
   font-family: 'Cabin', sans-serif;
 }
 
-h3 {
+#castcrew h3 {
   font-size: 20px;
+  margin-bottom: 0;
 }
 
 .purple {
@@ -293,10 +294,23 @@ h3 {
 
 .person {
   padding-bottom: 10px;
+  clear: both;
+  margin-bottom: 20px;
 }
 
 .gray {
   color: #CCC;
+}
+
+#castcrew img {
+	float: left;
+	padding-right: 20px;
+	width: 125px;
+}
+
+#castcrew h4 {
+	color: #999;
+	margin-top: 0;
 }
 
 
