@@ -50,7 +50,10 @@
 		  <li><a href="#castcrew">Cast & Crew</a></li>
 		  <li><a href="#media">Media</a></li>
 		</ul>
-	  </div>
+		<div id="facebook">
+			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FApplause-for-a-Cause%2F200787833292019&amp;width=200&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=351512704862028" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:258px;" allowTransparency="true"></iframe>
+		</div>
+	</div>
 	  <div id="rightSide">
 		<section id="home">
 		  <img class="mainlogo" src="img/logo.png" alt="Applause For a Cause logo" />
@@ -234,11 +237,17 @@
 		  </div>
 		</section>
 		<section id="media">
+			<div id="gallery">
+				<h1>Media</h1>
+				<h2>RUSH</h2>
+				<div id="rush-slideshow"></div>
+			</div>
 		</section>
 	  </div>
     </div>
     <footer>
-
+		<p>&copy; 2012 Applause For a Cause</p>
+		<p>Site designed by <a href="http://www.seangransee.com/">Sean Gransee</a></p>
     </footer>
   </div> <!--! end of #container -->
 
@@ -250,11 +259,44 @@
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 
 
-  <!-- scripts concatenated and minified via ant build script-->
-  <script defer src="js/plugins.js"></script>
-  <script defer src="js/script.js"></script>
-  <!-- end scripts-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/libs/galleria/galleria-1.2.6.min.js"></script>
+  <script src="js/libs/galleria/plugins/flickr/galleria.flickr.min.js"></script>
 
+
+	<script>
+	
+	function handleFooter()
+	{
+		if ($(window).width() < 1275)
+		{
+			$('footer').fadeOut();
+		} else {
+			$('footer').fadeIn();
+		}
+	}
+	
+	$(window).resize(function() {
+		handleFooter();
+	});
+	
+	$(window).load(function() {
+		handleFooter();
+	});
+
+    // Load the classic theme
+    Galleria.loadTheme('js/libs/galleria/themes/classic/galleria.classic.min.js');
+
+    // Initialize Galleria
+    $('#rush-slideshow').galleria({
+        flickr: 'set:72157629210100385',
+        flickrOptions: {
+            sort: 'interestingness-desc'
+        }
+    });
+
+    </script>
 	
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>

@@ -223,14 +223,15 @@ td { vertical-align: top; }
 
 #leftSide {
   float: left;
-  width: 260px;
+  width: 200px;
   position: fixed;
   left: 50px;
+  top: 10%;
 }
 
 ul#nav {
   list-style-type: none;
-  margin: 50px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -253,7 +254,7 @@ section {
 }
 
 #rightSide {
-  margin-left: 260px;
+  margin-left: 200px;
 }
 
 h1 {
@@ -321,6 +322,39 @@ p {
 	float: right;
 	margin-top: 0;
 	padding-top: 10px;
+}
+
+#rush-slideshow {
+	height:450px;
+}
+
+.galleria-info-link {
+	display: none;
+}
+
+#facebook {
+	position: fixed;
+	bottom: 20px;
+}
+
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 0 10px 10px 0;
+	display: none;
+}
+
+footer p {
+	font-size: 11px;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+	color: #999;
+}
+
+footer a, footer a:visited {
+	color: #999;
 }
 
 
