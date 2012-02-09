@@ -358,6 +358,31 @@ footer a, footer a:visited {
 	color: #999;
 }
 
+.in-media {
+	margin: 50px 0;
+}
+
+.news {
+	padding: 0;
+	padding-left: 15px;
+	border-left: 10px solid #965599;
+}
+
+.news h1 {
+	font-size: 26px;
+	margin: 0;
+}
+
+.news h1 a{
+	text-decoration: none;
+}
+
+.news h2 {
+	font-size: 14px;
+	color: #999;
+	margin: 0;
+}
+
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
@@ -369,9 +394,6 @@ footer a, footer a:visited {
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
 .hidden { display: none !important; visibility: hidden; }
-
-/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
