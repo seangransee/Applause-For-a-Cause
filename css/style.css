@@ -254,8 +254,8 @@ section {
 }
 
 #rightSide {
-  margin-left: 200px;
   width: 700px;
+  float: right;
 }
 
 h1 {
@@ -336,6 +336,7 @@ p {
 #facebook {
 	position: fixed;
 	bottom: 20px;
+	display: none;
 }
 
 footer {
