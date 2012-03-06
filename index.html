@@ -28,6 +28,7 @@
 		  <li><a href="#films">The Films</a></li>
 		  <li><a href="#castcrew">Cast &amp; Crew</a></li>
 		  <li><a href="#media">Media</a></li>
+		  <li><a href="#contact">Contact</a></li>
 		</ul>
 		<div id="facebook">
 			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FApplause-for-a-Cause%2F200787833292019&amp;width=200&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=351512704862028" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:258px;" allowTransparency="true"></iframe>
@@ -243,7 +244,7 @@
 		  	<p>John Buell is a film major at Northwestern University. Raised in the great state of Ohio, he enjoys writing in his spare time and one day hopes to shun the real world and become a goat farmer in Iceland.</p>
 		  </div>
 			
-		  <h2 style="clear: both; margin-top: 230px;">Cast of <em>Experience For Beginners</em></h2>
+		  <h2 style="clear: both; margin-top: 160px;">Cast of <em>Experience For Beginners</em></h2>
 		  
 		  <div class="person">
 		  	<img src="img/people/dulcinee-deguere.jpg" alt="Dulcinee DeGuere" />
@@ -291,7 +292,15 @@
 				</div>
 				<div class="in-media" id="rush-slideshow"></div>
 				<p class="caption" style="margin-top: -46px;">Stills from <em>RUΣH</em></p>
+				<div class="in-media" id="rush-premiere"></div>
+				<p class="caption" style="margin-top: -46px;">Premiere of <em>RUΣH</em></p>
 			</div>
+		</section>
+		<section id="contact">
+			<h1>Contact</h1>
+			<p><strong>Applause For a Cause:</strong> <a href="mailto:applausenu@gmail.com">applausenu@gmail.com</a></p>
+			<p><strong>Sarah Jane Inwards, Co-Director:</strong> <a href="mailto:sarahinwards2009@u.northwestern.edu">sarahinwards2009@u.northwestern.edu</a></p>
+			<p><strong>Alec Ziff, Co-Director:</strong> <a href="mailto:alecziff2013@u.northwestern.edu">alecziff2013@u.northwestern.edu</a></p>
 		</section>
 	  </div>
     </div>
@@ -323,7 +332,7 @@
 			$('footer').fadeIn();
 		}
 		
-		if ($(window).height() < 567)
+		if ($(window).height() < 610)
 		{
 			$('#facebook').fadeOut();
 		} else {
@@ -345,6 +354,14 @@
     // Initialize Galleria
     $('#rush-slideshow').galleria({
         flickr: 'set:72157629210100385',
+        flickrOptions: {
+            sort: 'interestingness-desc'
+        }
+    });
+    
+    // Initialize Galleria
+    $('#rush-premiere').galleria({
+        flickr: 'set:72157629524095845',
         flickrOptions: {
             sort: 'interestingness-desc'
         }
