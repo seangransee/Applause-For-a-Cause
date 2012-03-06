@@ -70,6 +70,15 @@
 			and its own equipment. Yet Applause’s vision remains the same: students have the
 			power to create professional, industry-quality films while doing so for a
 			greater good.</p>
+			
+			<div id="exec-slideshow">
+			    <img src="img/exec1.jpg" alt="" class="active" />
+			    <img src="img/exec2.jpg" alt="" />
+			    <img src="img/exec3.jpg" alt="" />
+			    <img src="img/exec4.jpg" alt="" />
+			</div>
+			
+			<p class="caption">Applause For a Cause 2011-2012 exec board</p>
 		  </div>
 		</section>
 		<section id="films">
@@ -84,6 +93,7 @@
 			House near Children’s Memorial Hospital in Chicago.</p>
 			<p><em>Check out <a href="http://www.imdb.com/title/tt1987632/"><em>RUΣH</em>'s IMDB page</a>.</em></p>
 			<iframe width="700" height="425" src="http://www.youtube.com/embed/3iRpUOGthYk?rel=0" frameborder="0" allowfullscreen></iframe>
+			<p class="caption"><em>RUΣH</em> trailer</p>
 		  </div>
 		  <div class="content">
 			<h2>Experience For Beginners <span class="gray">2012</span></h2>
@@ -276,9 +286,11 @@
 					<h2>The Daily Northwestern</h2>
 				</div>
 				<div class="in-media">
-					<iframe width="700" height="386" src="http://www.youtube.com/embed/3iRpUOGthYk?rel=0" frameborder="0" allowfullscreen></iframe>
+					<iframe src="http://player.vimeo.com/video/19265917?byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					<p class="caption">The making of <em>RUΣH</em></p>
 				</div>
 				<div class="in-media" id="rush-slideshow"></div>
+				<p class="caption" style="margin-top: -46px;">Stills from <em>RUΣH</em></p>
 			</div>
 		</section>
 	  </div>
@@ -347,6 +359,28 @@
 	         });
 	      }
 	   })
+	});
+	
+	// EXEC SLIDESHOW
+	function slideSwitch() {
+	    var $active = $('#exec-slideshow IMG.active');
+	
+	    if ( $active.length == 0 ) $active = $('#exec-slideshow IMG:last');
+	
+	    var $next =  $active.next().length ? $active.next()
+	        : $('#exec-slideshow IMG:first');
+	
+	    $active.addClass('last-active');
+	
+	    $next.css({opacity: 0.0})
+	        .addClass('active')
+	        .animate({opacity: 1.0}, 1000, function() {
+	            $active.removeClass('active last-active');
+	        });
+	}
+	
+	$(function() {
+	    setInterval( "slideSwitch()", 5000 );
 	});
 
     </script>

@@ -384,6 +384,33 @@ footer a, footer a:visited {
 	margin: 0;
 }
 
+.caption {
+	margin-top: 3px;
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* EXEC SLIDESHOW */
+#exec-slideshow {
+    position:relative;
+    height:324px;
+}
+
+#exec-slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#exec-slideshow IMG.active {
+    z-index:10;
+}
+
+#exec-slideshow IMG.last-active {
+    z-index:9;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
