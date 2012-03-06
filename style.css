@@ -416,6 +416,10 @@ footer a, footer a:visited {
     z-index:9;
 }
 
+.nojs {
+	margin-left: -143px;
+}
+
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
