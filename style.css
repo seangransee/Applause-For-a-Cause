@@ -32,7 +32,7 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
-body { margin: 0; font-size: 13px; line-height: 1.231; background: url('../img/back.png'); }
+body { margin: 0; font-size: 13px; line-height: 1.231; background: url('img/back.png'); }
 
 body, button, input, select, textarea { font-family: 'Montserrat', sans-serif; color: #222; }
 
@@ -414,6 +414,10 @@ footer a, footer a:visited {
 
 #exec-slideshow IMG.last-active {
     z-index:9;
+}
+
+.bottom {
+	margin-bottom: 0;
 }
 
 /* ==|== non-semantic helper classes ========================================
