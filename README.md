@@ -3,3 +3,5 @@ I'm on the executive board of Northwestern student group Applause For a Cause as
 This is also my first attempt at a one-page website.
 
 Visit the site at http://www.applausenu.org/
+
+Check out my blog post on how to build something similar: http://blog.seangransee.com/2012/03/how-to-build-an-elegant-one-page-scrolling-website/
