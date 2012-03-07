@@ -351,6 +351,19 @@
   <script src="js/galleria/plugins/flickr/galleria.flickr.min.js"></script>
   <script>
 	
+	// Activate one page nav
+	$('#nav').onePageNav({
+	  currentClass: 'current',
+	  changeHash: false,
+	  scrollSpeed: 750,
+	  scrollOffset: 30
+	});
+	
+	// Load images as they come into view
+	$('.person img').lazyload({
+		effect : "fadeIn",
+	});
+	
 	// Hide certain elements when the viewport isn't big enough to show them without overlap
 	function handleDisplay()
 	{
@@ -431,11 +444,6 @@
 	// Set slideshow interval for exec slideshow
 	$(function() {
 	    setInterval( "slideSwitch()", 5000 );
-	});
-	
-	// Load images as they come into view
-	$('.person img').lazyload({
-		effect : "fadeIn",
 	});
 
     </script>
