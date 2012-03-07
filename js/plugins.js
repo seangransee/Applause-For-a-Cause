@@ -50,13 +50,7 @@ c.init=function(b,d){var a=false;b.find("a").bind("click",function(f){c.bindNav(
 	  currentClass: 'current',
 	  changeHash: false,
 	  scrollSpeed: 750,
-	  scrollOffset: 30,
-	  begin: function() {
-		console.log('I get fired when the animation is starting');
-	  },
-	  end: function() {
-		console.log('I get fired when the animation is ending');
-	  }
+	  scrollOffset: 30
 	});
     
     
