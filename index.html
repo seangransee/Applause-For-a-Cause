@@ -324,10 +324,14 @@
 					<iframe src="http://player.vimeo.com/video/19265917?byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="525" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 					<p class="caption">The making of <em>RUΣH</em></p>
 				</div>
-				<div class="in-media" id="rush-slideshow"></div>
-				<p class="caption" style="margin-top: -46px;">Stills from <em>RUΣH</em></p>
-				<div class="in-media" id="rush-premiere"></div>
-				<p class="caption" style="margin-top: -46px;">Premiere of <em>RUΣH</em></p>
+				<div class="in-media">
+					<object width="700" height="525"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629210100385%2Fshow%2F&page_show_back_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629210100385%2F&set_id=72157629210100385&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629210100385%2Fshow%2F&page_show_back_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629210100385%2F&set_id=72157629210100385&jump_to=" width="700" height="525"></embed></object>
+					<p class="caption">Stills from <em>RUΣH</em></p>
+				</div>
+				<div class="in-media">
+					<object width="700" height="525"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629524095845%2Fshow%2F&page_show_back_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629524095845%2F&set_id=72157629524095845&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=109615"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=109615" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629524095845%2Fshow%2F&page_show_back_url=%2Fphotos%2F68179070%40N08%2Fsets%2F72157629524095845%2F&set_id=72157629524095845&jump_to=" width="700" height="525"></embed></object>
+					<p class="caption">Premiere of <em>RUΣH</em></p>
+				</div>
 			</div>
 		</section>
 		<section id="contact">
@@ -346,9 +350,8 @@
     
   </div> <!-- end #container -->
 
-  <script src="js/plugins.js"></script>
-  <script src="js/galleria/galleria-1.2.6.min.js"></script>
-  <script src="js/galleria/plugins/flickr/galleria.flickr.min.js"></script>
+  <script src="plugins.js"></script>
+  
   <script>
 	
 	// Activate one page nav
@@ -392,24 +395,6 @@
 		handleDisplay();
 	});
 
-    // Load the classic theme
-    Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
-
-    // Initialize Galleria for #rush-slideshow
-    $('#rush-slideshow').galleria({
-        flickr: 'set:72157629210100385',
-        flickrOptions: {
-            sort: 'interestingness-desc'
-        }
-    });
-    
-    // Initialize Galleria for #rush-premiere
-    $('#rush-premiere').galleria({
-        flickr: 'set:72157629524095845',
-        flickrOptions: {
-            sort: 'interestingness-desc'
-        }
-    });
     
     // Make any links to external sources open in a new window
     $(document).ready(function() {

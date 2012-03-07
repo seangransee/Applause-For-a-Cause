@@ -344,19 +344,7 @@ p {
 }
 
 
-/* IMAGES AND SLIDESHOWS */
-
-#rush-slideshow {
-	height:450px;
-}
-
-#rush-premiere {
-	height:450px;
-}
-
-.galleria-info-link {
-	display: none;
-}
+/* SLIDESHOW */
 
 #exec-slideshow {
     position:relative;
