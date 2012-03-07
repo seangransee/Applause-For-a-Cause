@@ -207,19 +207,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 td { vertical-align: top; }
 
 
-/* ==|== primary styles =====================================================
+/* ===== custom styles ======================================================
    Author: Sean Gransee
    ========================================================================== */
 
-.mainlogo {
-  width: 700px;
-}
-
-#main {
-  width: 960px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
+/* LEFT SIDEBAR */
 
 #leftSide {
   float: left;
@@ -244,8 +236,27 @@ ul#nav {
   margin-bottom:10px;
 }
 
-li.current a {
+#nav li.current a {
   color: #965599;
+}
+
+#facebook {
+	position: fixed;
+	bottom: 20px;
+	display: none;
+}
+
+
+/* MAIN SECTION */
+
+.mainlogo {
+  width: 700px;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 section {
@@ -258,13 +269,16 @@ section {
   float: right;
 }
 
+.content {
+  padding-bottom: 20px;
+}
+
+
+/* TEXT STYLING */
+
 h1 {
   color: #38b9e6;
   font-size: 50px;
-}
-
-p {
-  font-size: 16px;
 }
 
 h2 {
@@ -272,6 +286,7 @@ h2 {
 }
 
 p {
+  font-size: 16px;
   font-family: 'Cabin', sans-serif;
 }
 
@@ -291,10 +306,6 @@ p {
   margin-top: -20px;
 }
 
-.content {
-  padding-bottom: 20px;
-}
-
 .person {
   padding-top: 20px;
   clear: both;
@@ -303,6 +314,9 @@ p {
 .gray {
   color: #CCC;
 }
+
+
+/* CAST AND CREW */
 
 #castcrew img {
 	float: left;
@@ -325,6 +339,13 @@ p {
 	padding-top: 10px;
 }
 
+.nojs {
+	margin-left: -143px;
+}
+
+
+/* IMAGES AND SLIDESHOWS */
+
 #rush-slideshow {
 	height:450px;
 }
@@ -337,11 +358,28 @@ p {
 	display: none;
 }
 
-#facebook {
-	position: fixed;
-	bottom: 20px;
-	display: none;
+#exec-slideshow {
+    position:relative;
+    height:324px;
 }
+
+#exec-slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+}
+
+#exec-slideshow IMG.active {
+    z-index:10;
+}
+
+#exec-slideshow IMG.last-active {
+    z-index:9;
+}
+
+
+/* FOOTER */
 
 footer {
 	position: fixed;
@@ -363,9 +401,7 @@ footer a, footer a:visited {
 	color: #999;
 }
 
-.in-media {
-	margin: 50px 0;
-}
+/* MEDIA */
 
 .news {
 	padding: 0;
@@ -395,29 +431,8 @@ footer a, footer a:visited {
 	text-align: center;
 }
 
-/* EXEC SLIDESHOW */
-#exec-slideshow {
-    position:relative;
-    height:324px;
-}
-
-#exec-slideshow IMG {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:8;
-}
-
-#exec-slideshow IMG.active {
-    z-index:10;
-}
-
-#exec-slideshow IMG.last-active {
-    z-index:9;
-}
-
-.nojs {
-	margin-left: -143px;
+.in-media {
+	margin: 50px 0;
 }
 
 /* ==|== non-semantic helper classes ========================================
